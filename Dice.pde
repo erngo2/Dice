@@ -26,11 +26,10 @@ class Die //models one single dice cube
 		mySize = 50;
 		myX = x;
 		myY = y;
-		dot = (int)(Math.random() * 6) + 1;
 	}
 	void roll()
 	{
-		//your code here
+		dot = (int)(Math.random() * 6) + 1;
 		
 	}
 	void show()
@@ -47,31 +46,49 @@ class Die //models one single dice cube
 		{
 			fill(150);
 			textAlign(CENTER, CENTER);
-			ellipse(myX + 25, myY + 25, 10, 10);
+
+			ellipse(myX + 11, myY + 11, 10, 10);
+			ellipse(myX + 39, myY + 39, 10, 10);
+			
 		}
 		if(dot == 3)
 		{
 			fill(150);
 			textAlign(CENTER, CENTER);
+			ellipse(myX + 11, myY + 11, 10, 10);
 			ellipse(myX + 25, myY + 25, 10, 10);
+			ellipse(myX + 39, myY + 39, 10, 10);
 		}
 		if(dot == 4)
 		{
 			fill(150);
 			textAlign(CENTER, CENTER);
-			ellipse(myX + 25, myY + 25, 10, 10);
+			ellipse(myX + 11, myY + 11, 10, 10);
+			ellipse(myX + 11, myY + 39, 10, 10);
+			ellipse(myX + 39, myY + 11, 10, 10);
+			ellipse(myX + 39, myY + 39, 10, 10);
 		}
 		if(dot == 5)
 		{
 			fill(150);
 			textAlign(CENTER, CENTER);
+			ellipse(myX + 11, myY + 11, 10, 10);
+			ellipse(myX + 11, myY + 39, 10, 10);
 			ellipse(myX + 25, myY + 25, 10, 10);
+			ellipse(myX + 39, myY + 11, 10, 10);
+			ellipse(myX + 39, myY + 39, 10, 10);
 		}
 		if(dot == 6)
 		{
 			fill(150);
 			textAlign(CENTER, CENTER);
-			ellipse(myX + 25, myY + 25, 10, 10);
+			ellipse(myX + 11, myY + 11, 10, 10);
+			ellipse(myX + 11, myY + 25, 10, 10);
+			ellipse(myX + 11, myY + 39, 10, 10);
+			ellipse(myX + 39, myY + 11, 10, 10);
+			ellipse(myX + 39, myY + 25, 10, 10);
+			ellipse(myX + 39, myY + 39, 10, 10);
 		}
 	}
 }
+
