@@ -30,6 +30,12 @@ void mousePressed()
 	if(mouseButton == RIGHT)
 		sum = 0;
 }
+
+void keyPressed()
+{
+	redraw();
+}
+
 class Die //models one single dice cube
 {
 	//variable declarations here
